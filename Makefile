@@ -20,4 +20,3 @@ clean:
 
 demo: llDemo
 	(echo first; echo "second line"; echo "third and last") | ./llDemo
-

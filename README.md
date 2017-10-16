@@ -1,4 +1,4 @@
-# arch1-linked-list-demo
+arch1-linked-list-demo
 
 This directory contains:
 * code that implements a linked list of strings 

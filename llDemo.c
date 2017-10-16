@@ -17,25 +17,19 @@ int gets_n(char *s, int limit)
   }
   return (p - s);		/* #chars read (not including terminator or \n*/
 }
+/****************************** Added Code ******************************/
 
-int main()
-{
-  char buf[100];
-  LList *lp = llAlloc();	/* make empty list */
-
-  llPrint(lp, "List contents, prior to reading input:");
-
-  while (gets_n(buf, 100))	/* build list */
-    llPut(lp, buf);
-
-  llPrint(lp, "List contents, after building list:");
-
-  llMakeEmpty(lp);
-
-  printf("After emptying the list...");
-  llPrint(lp, 0);		/* default message */
-
-  llFree(lp);
-
-  return 0;
+typedef struct node {
+  struct node *left;
+  struct node *right;
+  char[] name;
+  int id;
 }
+
+int main(){
+  node *tree = NULL;
+
+  
+}
+
+/************************************************************************/
